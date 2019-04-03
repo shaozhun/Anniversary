@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>恋爱计时器</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="content">
+        <h2>xrw-sz，已经在一起了</h2>
+        <div class="timer">
+            <b id="d"></b> 天 <b id="h"></b> 小时 <b id="m"></b> 分钟<br> 
+           
+        
+           <hr style="height:3px;border:none;border-top:1px solid black;" />
+           
+           <b id="y"></b> 年 <b id="d2"></b> 天
+        </div>
+    </div>
+
+    <script>
+        function timer() {
+            var start = new Date("2016-04-26 00:00:00"); // 2016.4.26
+            var t = new Date().getTime() - start;
+
+            var h = ~~(t / 1000 / 60 / 60 % 24);
+            if (h < 10) {
+                h = "0" + h;
+            }
+            var m = ~~(t / 1000 / 60 % 60);
+            if (m < 10) {
+                m = "0" + m;
+            }
+
+            var s = ~~(t / 1000 % 60);
+            if (s < 10) {
+                s = "0" + s;
+            }
+        
+            document.getElementById('d').innerHTML = ~~(t / 1000 / 60 / 60 / 24);
+            document.getElementById('h').innerHTML = h;
+            document.getElementById('m').innerHTML = m;
+            document.getElementById('y').innerHTML = ~~(t / 1000 / 60 / 60 / 24 / 365);
+            document.getElementById('d2').innerHTML = ~~(t / 1000 / 60 / 60 / 24 % 365);
+        }
+        timer();
+        setInterval(timer, 1000);
+    </script>
+</body>
+
+</html>
