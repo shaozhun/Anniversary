@@ -1,31 +1,84 @@
 body {
-    -webkit-font-smoothing: antialiased;
-    font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
-    background-image: url('https://raw.githubusercontent.com/we11cheng/we11cheng.github.io/master/bg.jpg');
-    font-size: 85%;
+    background-color: #183059;
     margin: 0;
+    padding: 0;
 }
-
-h2 {
-    font-size: 220%;
-    font-weight: 400;
-}
-
-.content {
-    position: absolute;
-    width: 100%;
-    top: 40%;
-    transform: translate(0, -50%);
-    text-align: center;
-    padding: 20px;
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .timer {
-    font-size: 180%;
-    line-height: 1.5;
-    margin: 1em 0;
+    color: #F6F4F3;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 2px;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+    margin-top: 200px;
+
+}
+.hours, .minutes, .days{
+    width: 135px;
+    float: left;
+    padding: 10px 0;
+    
 }
 
-.timer b {
-    color: rgb(253, 99, 125);
+.timer .days{
+    border-radius: 6px;
+    background-color: #ef2f3c;
+    color: #183059;
+    margin-left: 260px;
+}
+.timer .days #d{
+    font-size: 50px;
+    font-weight: 900;
+    
+}
+.timer .days span{
+color: #fff;
+display: block;
+margin-bottom: 10px;
+}
+
+.timer .hours{
+
+    border-radius: 6px;
+    background-color: #f6f4f3;
+    color: #183059;
+    margin: 0 7px;
+
+}
+.timer .hours #h{
+    font-size: 50px;
+    font-weight: 900;
+    
+}
+.timer .hours span{
+color: #276fbf;
+display: block;
+margin-bottom: 10px;
+}
+
+.timer .minutes{
+
+    border-radius: 6px;
+    background-color: #276fbf;
+    color: #183059;
+    margin-right: 260px;
+}
+.timer .minutes #m{
+    font-size: 50px;
+    font-weight: 900;
+    
+}
+.timer .minutes span{
+color: #fff;
+display: block;
+margin-bottom: 10px;
 }
