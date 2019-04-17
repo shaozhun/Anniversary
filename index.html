@@ -34,13 +34,13 @@
       
               <li class="seq-step1 seq-in" id="step1">
                 <div class="seq-content">
-                  <h2 data-seq class="seq-title"><b id="y"></b> 年</h2>
+                  <h2 data-seq class="seq-title"><b></b> 雯雯和哥哥在一起的</h2>
                 </div>
               </li>
       
               <li class="seq-step2" id="step2">
                 <div class="seq-content">
-                  <h2 data-seq class="seq-title"><b id="m2"></b>月</h2>
+                  <h2 data-seq class="seq-title"><b id="y"></b> 年</h2>
                 </div>
               </li>
       
@@ -79,16 +79,20 @@
             if (h < 10) {
                 h = "0" + h;
             }
+            //小时
             var m = ~~(t / 1000 / 60 % 60);
             if (m < 10) {
                 m = "0" + m;
             }
+            //分钟
 
             var s = ~~(t / 1000 % 60);
             if (s < 10) {
                 s = "0" + s;
             }
+            //秒
             var d2 = ~~(t / 1000 / 60 / 60 / 24 % 365);
+          
             if (d2 < 10) {
                 d2 = "0" + d2;
             }

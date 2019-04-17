@@ -107,7 +107,7 @@ html,
 }
 
 .seq .seq-pagination .seq-current {
-  background: #F96D38;
+  background: #183059;
 }
 
 .seq .seq-pagination > * {
@@ -119,7 +119,7 @@ html,
   height: 28px;
   cursor: pointer;
   background: none;
-  border: #F96D38 solid 2px;
+  border: #183059 solid 2px;
   -webkit-transition-duration: .1s;
   transition-duration: .1s;
   -webkit-transition-property: background-color;
