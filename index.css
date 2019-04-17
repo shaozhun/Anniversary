@@ -25,7 +25,7 @@ body {
 .hours, .minutes, .days{
     width: 135px;
     float: left;
-    padding: 10px 0;
+    padding: 5px 0;
     
 }
 
